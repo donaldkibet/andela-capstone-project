@@ -1,0 +1,32 @@
+{
+  "name": "andela-capstone-project",
+  "version": "1.0.0",
+  "description": "Andela Capstone Project",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc && nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldkibet/andela-capstone-project.git"
+  },
+  "keywords": [
+    "Andela",
+    "Capstone",
+    "NodeJS",
+    "Express",
+    "PostgreSQL"
+  ],
+  "author": "Donald Kibet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donaldkibet/andela-capstone-project/issues"
+  },
+  "homepage": "https://github.com/donaldkibet/andela-capstone-project#readme",
+  "dependencies": {
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
