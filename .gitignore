@@ -1,0 +1,10 @@
+# checkout for more on https://github.com/github/gitignore
+
+# VS Code 
+.vscode
+
+# node_modules
+node_modules
+
+#dist folder
+dist
