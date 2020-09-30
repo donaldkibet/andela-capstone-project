@@ -1,24 +1,16 @@
 {
-    "compilerOptions": {
-        "esModuleInterop": true,
-        "module": "esnext",
-        "allowSyntheticDefaultImports": true,
-        "jsx": "react",
-        "moduleResolution": "node",
-        "lib": [
-            "dom",
-            "es5",
-            "scripthost",
-            "es2015",
-            "es2015.promise",
-            "es2016.array.include",
-            "es2018"
-        ],
-        "noEmit": true,
-        "target": "esnext",
-        "resolveJsonModule": true
-    },
-    "include": [
-        "src/**/*"
-    ]
+  "compilerOptions": {
+    "module": "esnext",
+    "esModuleInterop": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["src/**/*"]
 }

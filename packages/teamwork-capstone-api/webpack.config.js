@@ -1,17 +1,27 @@
 const path = require("path");
+const NodemonPlugin = require("nodemon-webpack-plugin");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
   entry: "./src/index.ts",
+  devtool: "inline-source-map",
+  mode: "development",
   target: "node",
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+      },
+    ],
+  },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
+  externals: [nodeExternals()],
   output: {
-    filename: "index.js",
+    filename: "teamwork-capstone-api.js",
     path: path.resolve(__dirname, "dist"),
   },
-  devtool: "source-map",
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"],
-  },
-  module: {
-    rules: [{ test: /\.tsx?$/, loader: "ts-loader" }],
-  },
+  plugins: [new NodemonPlugin()],
 };

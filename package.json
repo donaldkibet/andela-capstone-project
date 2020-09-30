@@ -7,10 +7,18 @@
     "scripts": {
         "debug": "lerna run start --scope @teamwork/capstone-${name:-api} --stream",
         "test": "lerna run test",
-        "build": "lerna run build stream",
+        "build": "lerna run build --stream",
         "prettier": "prettier"
     },
     "license": "MIT",
-    "author": {"name": "Donald Kibet","email": "dkibet.work@gmail.com"},
-    "gitRepository": "https://github.com/donaldkibet/andela-capstone-project"
+    "author": {
+        "name": "Donald Kibet",
+        "email": "dkibet.work@gmail.com"
+    },
+    "gitRepository": "https://github.com/donaldkibet/andela-capstone-project",
+    "devDependencies": {
+        "typescript": "^4.0.3",
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    }
 }
