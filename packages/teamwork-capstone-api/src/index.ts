@@ -17,6 +17,14 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  const headers  = req.headers;
+  console.log(headers);
+  res
+    .send({ username: "donaldkibet", url: "https://github.com/donaldkibet" })
+    .status(200);
+});
+
 const server = app.listen(PORT, () => {
   console.log(`Server Listening at port ${PORT}`);
 });
