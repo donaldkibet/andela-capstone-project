@@ -21,6 +21,9 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: test
+      - uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: badges
       - name: Upload Artifacts
         uses: actions/upload-artifact@v2
         with:
