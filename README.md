@@ -1,6 +1,6 @@
 # capstone-teamwork-project
 
-[![Node.js CI](https://github.com/donaldkibet/andela-capstone-projectactions/workflows/node.js.yml/badge.svg?branch=working)](https://github.com/donaldkibet/andela-capstone-project/actions/workflows/node.js.yml)
+[![Node.js CI](https://github.com/donaldkibet/andela-capstone-project/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/donaldkibet/andela-capstone-project/actions/workflows/node.js.yml/badge.svg?branch=master)
 
 ![Badges](badges/badge-branches.svg) ![Badges](badges/badge-functions.svg) ![Badges](badges/badge-lines.svg)
 
