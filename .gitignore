@@ -23,6 +23,7 @@ lib-cov
 coverage
 dist
 *.lcov
+build
 
 # nyc test coverage
 .nyc_output
