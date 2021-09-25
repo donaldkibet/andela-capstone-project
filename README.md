@@ -31,3 +31,14 @@ yarn or npm install
 ```sh
  yarn start
 ```
+
+4. This project supports Docker, to run this project using docker simply run the following command,
+    the above builds the image and runs the container
+
+```sh
+
+docker-compose up -d
+
+```
+
+The above builds the image and runs the project on port 80, on your browser navigate to [http://localhost](http://localhost)
